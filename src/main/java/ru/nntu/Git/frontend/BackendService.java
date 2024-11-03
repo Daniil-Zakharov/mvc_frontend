@@ -15,7 +15,7 @@ import java.io.IOException;
 @Component
 public class BackendService {
 
-    private static final String BASE_URL = "http://localhost:8081/api";
+    private static final String BASE_URL = "http://172.28.0.2:8081/api";
 
     public void write(String line) throws IOException {
         try (CloseableHttpClient httpClient = HttpClients.createDefault()) {
